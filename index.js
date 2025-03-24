@@ -1,4 +1,3 @@
-const { MY_NAME, MY_CITY, MY_LANGUAGE} = require(".env.sample");
+require('dotenv').config();
 
-
-console.log(`I am ${MY_NAME}, wilder in ${MY_CITY}, and I love ${MY_LANGUAGE}`);
+console.log(`I am ${process.env.MY_NAME}, wilder in ${process.env.MY_CITY}, and I love ${process.env.MY_LANGUAGE}`);
